@@ -25,13 +25,13 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = ">= 2.3"
+  spec.required_ruby_version = ">= 3.3"
 
-  spec.add_dependency "prometheus-client", ">= 3.0", "< 5.0"
+  spec.add_dependency "prometheus-client", ">= 3.0", "< 6.0"
   spec.add_dependency "yabeda", "~> 0.10"
   spec.add_dependency "rack"
+  spec.add_dependency "logger"
 
-  spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
